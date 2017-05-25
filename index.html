@@ -7,11 +7,47 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300i|Roboto+Slab:400,700">
     </head>
     <body>
-        <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar">
+                <div class="container">
+                    <div class="brand floatL">
+                        <a href="index.html" class="floatL">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="floatR"><span>Your</span>Logo</h4>
+                        </a>
+                    </div><!--brand-->
+                    
+                    <div class="menu floatR">
+                        <i class="fa fa-bars fa-2x fa-fw"></i>
+                    </div><!--menu-->
+                </div><!--container-->
+            </div><!--navbar-->
+            
+            <div class="menuList">
+                <ul class="floatL">
+                    <li><a href="#" data-value="home">Home</a></li>
+                    <li><a href="#" data-value="features">Features</a></li>
+                    <li><a href="#" data-value="aboutMe">About Me</a></li>
+                    <li><a href="#" data-value="myBlog">My Blog</a></li>
+                    <li><a href="#" data-value="myHistory">My History</a></li>
+                    <li><a href="#" data-value="gallery">Gallery</a></li>
+                    <li><a href="#" data-value="contact">Get in Touch!</a></li>
+                </ul>        
+            </div><!--menuList-->
+            <div class="clearfix"></div>
+        </nav>
+        
+        <!----------- Header ----------->
+        <header id="home">
             <div class="container">
                 <h2>In the hall of the</h2>
                 <h1>Mountain King</h1>
@@ -22,22 +58,23 @@
             </div><!--container-->
             <div class="clearfix"></div>
         </header>
-        <!----------- About ----------->
-        <section class="about text-center">
+        
+        <!----------- Features ----------->
+        <section class="features text-center" id="features">
             <div class="container">
-                <div class="box">
+                <div class="box wow bounceInLeft" data-wow-delay=".5s">
                     <i class="fa fa-pencil fa-4x fa-fw"></i>
                     <h3>Consectetur Risus</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div><!--box-->
                 
-                <div class="box">
+                <div class="box wow bounceInDown" data-wow-delay=".7s">
                     <i class="fa fa-camera-retro fa-4x fa-fw"></i>
                     <h3>Ultricies Aenean</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor.</p>
                 </div><!--box-->
                 
-                <div class="box">
+                <div class="box wow bounceInRight" data-wow-delay=".5s">
                     <i class="fa fa-bookmark-o fa-4x fa-fw"></i>
                     <h3>Cras Sollicitudin</h3>
                     <p>Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis.</p>
@@ -46,18 +83,18 @@
             <div class="clearfix"></div>
         </section>
         
-        <!----------- slideImg ----------->
-        <section class="slideImg">
+        <!----------- aboutMe ----------->
+        <section class="aboutMe wow bounceInRight" data-wow-delay=".8s" id="aboutMe">
             <div class="container">
                 <div class="slide floatR">
                     <h2>Ligula Mattis Ornare Ultricies</h2>
                     <h4>Pellentesque Cursus Amet Parturient Etiam</h4>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <div class="numberBox floatL">
+                    <div class="numberBox floatL wow bounceInRight" data-wow-delay="1s" data-wow-offset="0">
                         <h4>Ultricies</h4>
                         <h2>23,578</h2>
                     </div><!--numberBox-->
-                    <div class="numberBox floatR">
+                    <div class="numberBox floatR wow bounceInLeft" data-wow-delay="1s" data-wow-offset="0">
                         <h4>Fermentum</h4>
                         <h2>12,702</h2>
                     </div><!--numberBox-->
@@ -66,8 +103,8 @@
             <div class="clearfix"></div>
         </section>
         
-        <!----------- takeLook ----------->
-        <section class="takeLook">
+        <!----------- myBlog ----------->
+        <section class="myBlog" id="myBlog">
             <div class="container">
                 <div class="texty">
                     <h2>Lorem ipsum dolor sit amet,</h2>
@@ -85,8 +122,8 @@
             <div class="clearfix"></div>
         </section>
         
-        <!----------- slideImg2 ----------->
-        <section class="slideImg2">
+        <!----------- myHistory ----------->
+        <section class="myHistory wow bounceInLeft" data-wow-delay=".6s" id="myHistory">
             <div class="container">
                 <div class="slide floatL">
                     <p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
@@ -100,7 +137,7 @@
         </section>
         
         <!----------- gallery ----------->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <div class="img1 floatL">
                     <a href="https://unsplash.it/600/300?image=529" data-lightbox="imgy">
@@ -150,18 +187,18 @@
         <!----------- logos ----------->
         <section class="logos">
             <div class="container">
-                <div><img class="img-responsive" src="images/logo-sample-01.jpg" alt="..." /></div>
-                <div><img class="img-responsive" src="images/logo-sample-02.jpg" alt="..." /></div>
-                <div><img class="img-responsive" src="images/logo-sample-03.png" alt="..." /></div>
-                <div><img class="img-responsive" src="images/logo-sample-04.jpg" alt="..." /></div>
-                <div><img class="img-responsive" src="images/logo-sample-05.jpg" alt="..." /></div>
-                <div><img class="img-responsive" src="images/logo-sample-06.png" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay=".3s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-01.jpg" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay=".9s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-02.jpg" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay="1.4s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-03.png" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay="1.7s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-04.jpg" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay="1.1s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-05.jpg" alt="..." /></div>
+                <div class="wow bounceIn" data-wow-delay=".6s" data-wow-offset="40"><img class="img-responsive" src="images/logo-sample-06.png" alt="..." /></div>
             </div><!--container-->
             <div class="clearfix"></div>
         </section>
         
         <!----------- contact ----------->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="box">
                     <h2>Maecenas sed diam eget risus varius</h2>
@@ -176,7 +213,7 @@
         <footer>
             <div class="container">
                 <h3>Your Logo</h3>
-                <div class="social">
+                <div class="social wow flip">
                     <i class="fa fa-facebook fa-fw fa-lg"></i>
                     <i class="fa fa-twitter fa-fw fa-lg"></i>
                     <i class="fa fa-tumblr fa-fw fa-lg"></i>
@@ -184,20 +221,27 @@
                     <i class="fa fa-dribbble fa-fw fa-lg"></i>
                 </div><!--social-->
                 <div class="clearfix"></div>
-                <p><span class="preYear">&copy; 201</span>7 Your Company. Designed and Developed by <a href="#">Disso</a></p>
+                <p><span class="preYear">&copy; 201</span>7 Your Company. Designed and Developed by <a href="https://facebook.com/jrD1sso" target="_blank">Disso</a></p>
             </div><!--container-->
         </footer>
-
+        
+        <!-- PreLoading -->
+        <section class="loadingOverlay">
+            <div class="loader">Loading...</div>
+        </section>
+        
         <!-- =======================end======================= -->
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/lightbox.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
         <script>
             lightbox.option({
                 'wrapAround': true,
                 'alwaysShowNavOnTouchDevices' : true
-            })
+            });
+            new WOW().init();
         </script>
-        <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
