@@ -40,7 +40,7 @@ $(function () {
 //PreLoading ...
 $(window).on("load", function () {
     'use strict';
-    $(".loadingOverlay .loaderr").fadeOut(1000, function () {
+    $(".loadingOverlay .loader").fadeOut(1000, function () {
         $(this).parent().fadeOut('slow', function () {
             $(this).remove();
         });
