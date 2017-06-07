@@ -283,6 +283,7 @@ header button:first-of-type:hover {
 }
 
 /* ============= logos ============= */
+.logos {padding-bottom: 0;}
 .logos .container div {
     width: 15.666666%;
     margin-right: 1%;
