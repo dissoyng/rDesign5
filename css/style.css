@@ -288,7 +288,7 @@ header button:first-of-type:hover {
     width: 15.666666%;
     margin-right: 1%;
     float: left;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 @media (max-width: 1024px) {
